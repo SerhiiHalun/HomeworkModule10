@@ -31,7 +31,7 @@ public class Task3 {
         for (String word : words) {
             wordFrequencies.put(word, wordFrequencies.getOrDefault(word, 0) + 1);
         }
-        
+
         List<Map.Entry<String, Integer>> sortedEntries = new ArrayList<>(wordFrequencies.entrySet());
         sortedEntries.sort(Map.Entry.comparingByValue(Comparator.reverseOrder()));
 
